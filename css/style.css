@@ -25,7 +25,7 @@
     --ff-h: 'Big Shoulders Display', cursive;
     --ff-p: 'Lexend Deca', sans-serif;
     /* Font sizes */
-    --fs-h3: 1.5rem; /* 24 */
+    --fs-h3: 2.5rem; /* 24 */
     --fs-p: 1rem; /* 16 */
     /* Font weights */
     --fw-700: 700;
@@ -55,14 +55,17 @@ body{
 
 #cards{
     border-radius: 25px;
-    padding: 2rem;
+    padding: 3rem;
 }
 
 @media (min-width: 768px) {
     #cards {
         display: flex;
-        max-width: 90rem;
+        max-width: 60rem;
+        margin: 0 auto;
+        background-color: aqua;
     }
+
 }
 
 /* ======== 3. Typography ======== */
@@ -71,7 +74,7 @@ h3{
     font-size: var(--fs-h3);
     font-weight: var(--fw-700);
     color: var(--white);
-    margin-bottom: 2rem;
+    margin: 2rem 0;
 }
 
 p{
@@ -79,6 +82,8 @@ p{
     font-size: var(--fs-p);
     font-weight: var(--fw-400);
     color: var(--white-75);
+    line-height: 1.5;
+    margin-bottom: 5.5rem;
 }
 
 /* ======== 4. Utilities ======== */
@@ -98,6 +103,7 @@ a{
 
 #sedan-card{
     background-color: var(--orange);
+    border-radius: 12px 0 0 12px;
 }
 
 #suv-card{
@@ -106,6 +112,7 @@ a{
 
 #luxury-card{
     background-color: var(--cyan-200);
+    border-radius: 0 12px 12px 0;
 }
 
 /* ======== 6. Conponents ======== */
@@ -123,7 +130,6 @@ a{
 #sedan-btn{
     color: var(--orange);
     border: none;
-    padding: ;
 }
 
 #sedan-btn:hover{
@@ -153,4 +159,9 @@ a{
     color: var(--white);
     background-color: var(--cyan-200);
     border: var(--white) 2px solid;
+}
+
+.attribute{
+    text-align: center;
+    margin: 0 auto;
 }
