@@ -63,7 +63,6 @@ body{
         display: flex;
         max-width: 60rem;
         margin: 0 auto;
-        background-color: aqua;
     }
 
 }
@@ -95,7 +94,6 @@ a{
 /* ======== 5. Sections ======== */
 
 #cards{
-    background-color: aliceblue;
     content: fill;
     border-radius: 25px;
     padding: 0;
@@ -103,7 +101,13 @@ a{
 
 #sedan-card{
     background-color: var(--orange);
-    border-radius: 12px 0 0 12px;
+    border-radius: 12px 12px 0 0px;
+}
+
+@media (min-width: 768px) {
+    #sedan-card{
+        border-radius: 12px 0 0 12px;
+    }
 }
 
 #suv-card{
@@ -112,7 +116,13 @@ a{
 
 #luxury-card{
     background-color: var(--cyan-200);
-    border-radius: 0 12px 12px 0;
+    border-radius: 0 0 12px 12px;
+}
+
+@media (min-width: 768px) {
+    #luxury-card{
+        border-radius: 0 12px 12px 0;
+    }
 }
 
 /* ======== 6. Conponents ======== */
@@ -161,7 +171,8 @@ a{
     border: var(--white) 2px solid;
 }
 
-.attribute{
+.attribution{
+    padding-top: 1rem;
     text-align: center;
     margin: 0 auto;
 }
